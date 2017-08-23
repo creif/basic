@@ -1,0 +1,25 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="1" author="bob">
+        <createTable schemaName="PUBLIC"
+                     tableName="person">
+            <column name="person_id" type="integer" />
+            <column name="name" type="varchar(255)"/>
+            <column name="last_name" type="varchar(255)"/>
+            <column name="address" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="bob">
+        <insert schemaName="PUBLIC"
+                     tableName="person">
+            <column name="person_id" value="1" />
+            <column name="name" value="abc"/>
+            <column name="last_name" value="fdsg"/>
+            <column name="address" value="dsgf dsgdfgfdg dfg dgdfg"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

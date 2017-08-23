@@ -1,0 +1,1 @@
+Spring boot project with liquibase configured for H2 , Hibernate support,jersey rest and kafka producer consumer
